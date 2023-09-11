@@ -6,7 +6,8 @@ function App() {
 
   useEffect(() => {
     axios.get('http://localhost:5052/api/Sample')
-      .then(response => {
+    .then(response => {
+        console.log("this is response", response.status);
         setMessage(response.data.message);
       })
       .catch(error => {
