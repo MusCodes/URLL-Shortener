@@ -1,11 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
 
-[Route("api/[Controller]")]
+[Route("api/[Controller]/[Action]")]
 [ApiController]
 
 public class shortURLController : ControllerBase
 {
-    [HttpPost]
+    [HttpGet]
     public IActionResult ShortURL(string longURL)
     {
         if (string.IsNullOrEmpty(longURL))
@@ -25,6 +25,8 @@ public class shortURLController : ControllerBase
         }
 
 
-        // return Ok(new {message = "Hello From Backend"});
+       
     }
+    
+     
 }
