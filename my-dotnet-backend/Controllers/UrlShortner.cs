@@ -3,10 +3,10 @@ using Microsoft.AspNetCore.Mvc;
 [Route("api/[Controller]/[Action]")]
 [ApiController]
 
-public class shortURLController : ControllerBase
+public class shortnerURLController : ControllerBase
 {
     [HttpGet]
-    public IActionResult ShortURL(string longURL)
+    public IActionResult shortenURL(string longURL)
     {
         if (string.IsNullOrEmpty(longURL))
         {

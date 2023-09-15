@@ -229,11 +229,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mus/my-react-app/my-dotnet-backend/my-dotnet-backend.csproj",
+      "projectUniqueName": "/Users/mus/Desktop/C#Project/UrlShortner/my-dotnet-backend/my-dotnet-backend.csproj",
       "projectName": "my-dotnet-backend",
-      "projectPath": "/Users/mus/my-react-app/my-dotnet-backend/my-dotnet-backend.csproj",
+      "projectPath": "/Users/mus/Desktop/C#Project/UrlShortner/my-dotnet-backend/my-dotnet-backend.csproj",
       "packagesPath": "/Users/mus/.nuget/packages/",
-      "outputPath": "/Users/mus/my-react-app/my-dotnet-backend/obj/",
+      "outputPath": "/Users/mus/Desktop/C#Project/UrlShortner/my-dotnet-backend/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/mus/.nuget/NuGet/NuGet.Config"
