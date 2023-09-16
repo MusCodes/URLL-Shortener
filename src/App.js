@@ -8,6 +8,13 @@ function App() {
   const [message, setMessage] = useState("");
   const [input, setInput] = useState("");
 
+  function copyToClipBoard(){
+    const copyText= document.getElementById("shortURL");
+    copyText.select();
+    navigator.clipboard.writeText(copyText.value);
+    alert("Copied text to clipBoard"+ copyText.value)
+  }
+
   const handleSubmit = () => {
     axios({
       method: "get",
@@ -35,7 +42,7 @@ function App() {
           ></input>
         </div>
 
-        <button onClick={handleSubmit}>
+        <button  onClick={handleSubmit}>
           <span>
             </span> 
             <span>
@@ -45,9 +52,11 @@ function App() {
             <span>
             </span>
             get url</button>
+       
         <div className="input-box">
-          <a href={message} target="_blank">
-        <h2>{message}</h2>
+          <a href={message} target="_blank" rel="noopener noreferrer">
+        <h2 id="shortURL">{message}</h2>
+        <button onClick={copyToClipBoard}>COPY</button>
         </a>
       
         </div>
